@@ -31,11 +31,9 @@ export default  function App(props){
         getUsers().then(value => setUser(value.data))
     },[])
 
-
      return (
          <Router>
          <div>
-
              <Link to={'/users'}> user page</Link>
              <br/><hr/>
              <Link to={'/comments'}> comments page</Link>
